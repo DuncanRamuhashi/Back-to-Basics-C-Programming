@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,19 +50,19 @@ namespace Back_to_Basics_C__Programming
 
             //StringBuilder stringBuilder = new StringBuilder();       //this can be good for polymorphic behavior and can be used to build strings efficiently
 
-           // for (int i = 0; i < 100; i++) {
-          //      stringBuilder.Append("--");
-          //      stringBuilder.Append(i);
-          //  }
+            // for (int i = 0; i < 100; i++) {
+            //      stringBuilder.Append("--");
+            //      stringBuilder.Append(i);
+            //  }
 
             //Console.WriteLine(stringBuilder.ToString());
-           // Console.ReadLine();
+            // Console.ReadLine();
 
 
             //6.Working with Dates and Times
-             
 
-           // DateTime dateTime = DateTime.Now;
+
+            // DateTime dateTime = DateTime.Now;
             //Console.WriteLine(dateTime.ToString());
             //Console.WriteLine(dateTime.ToShortDateString());
             //Console.WriteLine(dateTime.ToShortTimeString());
@@ -70,17 +72,68 @@ namespace Back_to_Basics_C__Programming
             //Console.WriteLine(dateTime.AddHours(3).ToLongTimeString());
 
 
-           //DateTime myBirthday = new DateTime(1999, 01, 05);
-           // TimeSpan myAge = DateTime.Now.Subtract(myBirthday);
+            //DateTime myBirthday = new DateTime(1999, 01, 05);
+            // TimeSpan myAge = DateTime.Now.Subtract(myBirthday);
             //Console.WriteLine(myBirthday.ToString());
-           // Console.WriteLine(myAge.ToString());
-          //  Console.ReadLine();
+            // Console.WriteLine(myAge.ToString());
+            //  Console.ReadLine();
+
+
+
+            // Test Inheritance
+
+
+
+            //Car car = new Car("Honda", "Civic", 2021, 4);
+            //car.displayInfo();
+
+            //3.HashSet < T >
+
+            //A HashSet does not allow duplicate values.
+
+            //HashSet<string> names = new HashSet<string>();
+
+            //     names.Add("John");
+            //    names.Add("Peter");
+            //   names.Add("John");
+
+
+
+            //  4.Queue < T >
+
+            //A queue works like a real - world queue:
+
+            //   First person in → first person out.
+
+            ///Queue<string> people = new Queue<string>();
+
+            //   people.Enqueue("John");
+            //   people.Enqueue("Peter");
+            // people.Enqueue("David");
+
+            // Console.WriteLine(people.Dequeue());
+
+
+
+           // Stack<T>
+
+//A stack works like a stack of plates:
+
+  //          Last item in → first item out.
+
+//Stack<string> names = new Stack<string>();
+
+  //          names.Push("John");
+    //        names.Push("Peter");
+      //      names.Push("David");
+
+        //    Console.WriteLine(names.Pop());
 
 
 
 
         }
-
+        /**
         class car
         {
             public string model;
@@ -99,7 +152,12 @@ namespace Back_to_Basics_C__Programming
         
           
         }
+        //method overload in one class
 
 
+        // METHOD overriding is from inheritance and polymorphism
+        **/
+
+     
     }
 }
